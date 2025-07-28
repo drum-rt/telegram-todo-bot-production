@@ -1,0 +1,43 @@
+name: Telegram Todo Bot Production
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Запуск кожні 30 хвилин для підтримання активності
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25  # GitHub Actions має ліміт 35 хвилин
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run Todo Bot
+      env:
+        TELEGRAM_BOT_TOKEN_PRODUCTION: ${{ secrets.TELEGRAM_BOT_TOKEN_PRODUCTION }}
+      run: |
+        echo "🚀 Запуск Todo Bot Production..."
+        timeout 1500 python bot_github_production.py || echo "✅ Бот завершив роботу після 25 хвилин"
+        
+    - name: Upload data backup
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: todos-data-backup
+        path: todos_data.json
+        retention-days: 7
