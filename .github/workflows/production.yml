@@ -4,14 +4,13 @@ on:
   push:
     branches: [ main ]
   schedule:
-    # Запуск кожні 30 хвилин для підтримання активності
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 25  # GitHub Actions має ліміт 35 хвилин
+    timeout-minutes: 25
     
     steps:
     - name: Checkout code
@@ -31,11 +30,11 @@ jobs:
       env:
         TELEGRAM_BOT_TOKEN_PRODUCTION: ${{ secrets.TELEGRAM_BOT_TOKEN_PRODUCTION }}
       run: |
-        echo "🚀 Запуск Todo Bot Production..."
-        timeout 1500 python bot_github_production.py || echo "✅ Бот завершив роботу після 25 хвилин"
+        echo "Starting Todo Bot Production..."
+        timeout 1500 python bot_github_production.py || echo "Bot finished after 25 minutes"
         
     - name: Upload data backup
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: todos-data-backup
