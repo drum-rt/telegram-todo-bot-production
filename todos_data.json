@@ -1,0 +1,231 @@
+{
+  "users_data": {
+    "-1002138020601": [
+      {
+        "text": "Кокосове згущене молоко 0.200 Кокосове згущене молоко 0.320",
+        "item_id": 1,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Средство для мытья посуды, остаток: 4шт. Болотова 13шт у базі",
+        "item_id": 3,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Жмых конопля",
+        "item_id": 8,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Чернобривці",
+        "item_id": 13,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Семечка подсолнух",
+        "item_id": 25,
+        "section_index": 2,
+        "is_crossed": false
+      },
+      {
+        "text": "Салатна суміш",
+        "item_id": 33,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "чиа,",
+        "item_id": 37,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "мак,",
+        "item_id": 38,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "подсолнечное ост7 бутылок на ветрине,",
+        "item_id": 41,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Полынь",
+        "item_id": 49,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Наклейки :сорный кмин(есть 2).,лиано для капсул.,лиано порошок.,сода1000(есть 8)",
+        "item_id": 52,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Дай пак-18/28.,13/20",
+        "item_id": 54,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Наклейки. Сода 0.150",
+        "item_id": 55,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Зубная паста",
+        "item_id": 56,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Касторова олія",
+        "item_id": 58,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Нут",
+        "item_id": 62,
+        "section_index": 2,
+        "is_crossed": false
+      },
+      {
+        "text": "Сода",
+        "item_id": 69,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Горіх волоський",
+        "item_id": 71,
+        "section_index": 2,
+        "is_crossed": false
+      }
+    ],
+    "-1002581954453": [
+      {
+        "text": "металевий блін для Павлика",
+        "item_id": 39,
+        "section_index": 0,
+        "is_crossed": false
+      }
+    ]
+  },
+  "users_backup": {
+    "-1002581954453": [
+      {
+        "text": "конопля,",
+        "item_id": 29,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "подсолнечное ост7 бутылок на ветрине,",
+        "item_id": 30,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "Грец.орех,",
+        "item_id": 31,
+        "section_index": 2,
+        "is_crossed": false
+      },
+      {
+        "text": "рыжей,",
+        "item_id": 32,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "горчица, соя,",
+        "item_id": 33,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "миндаль,",
+        "item_id": 35,
+        "section_index": 0,
+        "is_crossed": false
+      },
+      {
+        "text": "росторопша,",
+        "item_id": 36,
+        "section_index": 0,
+        "is_crossed": false
+      }
+    ]
+  },
+  "next_ids": {
+    "12345": 2,
+    "-1002581954453": 40,
+    "999": 2,
+    "-1002138020601": 72,
+    "84999594": 1
+  },
+  "section_configs": {
+    "-1002138020601": {
+      "chat_id": -1002138020601,
+      "section_names": [
+        "Закупівля",
+        "Гараж",
+        "Волинка",
+        "Виконано"
+      ],
+      "section_symbols": [
+        "🛒",
+        "🔧",
+        "🎵",
+        "❌"
+      ],
+      "section_prefixes": [
+        "",
+        "!",
+        "!!",
+        ""
+      ],
+      "section_suffixes": [
+        "з",
+        "г",
+        "в",
+        ""
+      ]
+    },
+    "-1002581954453": {
+      "chat_id": -1002581954453,
+      "section_names": [
+        "Закупівля",
+        "Гараж",
+        "Волинка",
+        "Виконано"
+      ],
+      "section_symbols": [
+        "🛒",
+        "🔧",
+        "🎵",
+        "❌"
+      ],
+      "section_prefixes": [
+        "",
+        "!",
+        "!!",
+        ""
+      ],
+      "section_suffixes": [
+        "з",
+        "г",
+        "в",
+        ""
+      ]
+    }
+  }
+}
