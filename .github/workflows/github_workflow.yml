@@ -32,10 +32,10 @@ jobs:
         TELEGRAM_BOT_TOKEN_PRODUCTION: ${{ secrets.TELEGRAM_BOT_TOKEN_PRODUCTION }}
       run: |
         echo "🚀 Запуск Todo Bot Production..."
-        timeout 1500 python bot_github_production.py || echo "✅ Бот завершив роботу після 25 хвилин"
+        timeout 1500 python bot_github_production_v3.py || echo "✅ Бот завершив роботу після 25 хвилин"
         
     - name: Upload data backup
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: todos-data-backup
